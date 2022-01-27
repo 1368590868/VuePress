@@ -1,8 +1,11 @@
 module.exports = {
     // 站点配置
     lang: 'zh-CN',
-    title: '一个简单的文档',
+    title: '首页',
     description: '关于nuxt博客的制作',
+    markdown: {
+        lineNumbers: true
+    },
 
     // 主题和它的配置
     theme: '@vuepress/theme-default',

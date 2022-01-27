@@ -10,7 +10,7 @@ npm run docs:build
 cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
+ echo ' git fetch --all &&  git reset --hard origin/master' > pull.sh
 
 git init
 git add -A

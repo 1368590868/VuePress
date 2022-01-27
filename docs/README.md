@@ -41,8 +41,15 @@ module.exports = {
     },
 }
 ```
-::: details
-这是一个详情块，在 IE / Edge 中不生效
+::: details 点击查看代码
+```json
+{
+   "name" : "zs",
+   "age" : "18",
+   "time" : "day"
+}
+```
+
 :::
 
 ::: tip
