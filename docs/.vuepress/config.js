@@ -19,6 +19,10 @@ module.exports = {
         },
             // 添加菜单栏
             {
+                text: 'nuxt博客',
+                link:'https://irlin.cn'
+            },
+            {
             text: '联系作者',
             link: '/person/'
         }],
