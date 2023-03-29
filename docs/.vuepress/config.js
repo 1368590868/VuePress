@@ -17,12 +17,12 @@ module.exports = {
         items: [
           {
             text: '技术文章',
-            link: '/foo/',
+            link: '/学习笔记/',
           },
           //添加文章路由
           {
             text: '国考资料',
-            link: '/guokao/',
+            link: '/早期资料/',
           },
           {
             text: 'vue3使用Vuex',
@@ -34,7 +34,7 @@ module.exports = {
           },
           {
             text: 'PLA西部旧事',
-            link: '/lifeArticle/',
+            link: '/分享源于生活/',
           },
         ],
       },
@@ -45,7 +45,7 @@ module.exports = {
       },
       {
         text: '联系作者',
-        link: '/person/',
+        link: '/个人介绍/',
       },
     ],
     logo: 'https://irlin.cn/_nuxt/img/c5414e3.png',
@@ -53,7 +53,7 @@ module.exports = {
       '/': [
         {
           title: '个人简历',
-          children: ['/person/'],
+          children: ['/个人介绍/'],
         },
         {
           title: '文章',
@@ -62,14 +62,15 @@ module.exports = {
         //侧边栏配置层叠标题
         {
           title: '朝花夕拾',
-          children: ['/lifeArticle/'],
+          children: ['/分享源于生活/'],
         },
         {
           title: '资源分享',
-          children: ['/guokao/'],
+          children: ['/早期资料/'],
         },
       ],
     },
     sidebarDepth: 2,
   },
+  plugins: ['autobar'],
 };

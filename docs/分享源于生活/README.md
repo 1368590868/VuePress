@@ -4,7 +4,7 @@
 ——木木（新时期-周树人）
 
 :::details 点击展开图片
-![光荣退伍](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9263/FI6A0197.JPG)
+![光荣入伍](http://cdn.irlin.cn/56142c50-ce33-11ed-b7de-c1fb1f2a889f.JPG-ImgAutoSmall)
 :::
 
 从毕业以后，也不知为何会走上这条道路。里面有憧憬，也有些许悲伤，感叹着时间的流逝，是如此之快！
