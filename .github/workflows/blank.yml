@@ -1,34 +1,33 @@
-name: Deploy
+name: Deploy to Cloud Server
 
 on:
   push:
     branches:
-      - main # 这里改为你需要自动化部署的分支名称
+      - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v2
-      
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: "14.x"
-          
-    - name: Install Dependencies
-      run: npm ci
-      
-    - name: Build
-      run: npm run build
-      
-    - name: Deploy to Server
-      uses: easingthemes/ssh-deploy@v2.1.5
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.huaweiCloud }}
-      with:
-        server: 114.115.157.58
-        username: root
-        remote_path: /www/wwwroot/vue.irlin.cn
-        local_path: ./docs/.vuepress/dist/
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Transfer files to server
+        uses: appleboy/scp-action@master
+        with:
+          local: dist/
+          remote_path: /www/wwwroot/vue.irlin.cn
+          host: 114.115.157.58
+          username: root
+          key: ${{ secrets.HUAWEICLOUD }}
