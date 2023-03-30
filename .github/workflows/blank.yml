@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: npm run docs:build
 
       - name: Transfer files to server
         uses: appleboy/scp-action@master
