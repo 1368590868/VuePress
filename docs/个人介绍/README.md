@@ -8,6 +8,7 @@
 
 ### 专业技能
 
+
 - 熟练使用 TypeScript，ES6+常用方法
 - 熟练使用 Vue.js，Nuxt.js，Angular2，React + Umi + Dva
 - 熟练使用RxJS响应式编程
