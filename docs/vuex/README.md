@@ -109,4 +109,4 @@ export default createStore({
 });
 ```
 
-把原先的状态拆分成 modules 放入，在组件中使用store.state.store.count ,因为拆分成模块后需要再深入一成进行访问，`mutations`里面的同步方法可以正常通过`commit`进行调用，`actions`异步方法则使用`store.dispatch`进行调用
+把原先的状态拆分成 modules 放入，在组件中使用store.state.store.count ,因为拆分成模块后需要再深入一成进行访问，`mutations`里面的同步方法可以正常通过`commit`进行调用，`actions`异步方法则使用`store.dispatch`进行调用。
